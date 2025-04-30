@@ -6,6 +6,7 @@ export const sendQuestion = async (question: string): Promise<string> => {
     // Replace with your actual API endpoint
    const API_URL = 'https://theobot-api.vercel.app/api/ask';
 
+
     
     const response = await fetch(API_URL, {
       method: 'POST',
