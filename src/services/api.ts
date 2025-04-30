@@ -4,7 +4,8 @@
 export const sendQuestion = async (question: string): Promise<string> => {
   try {
     // Replace with your actual API endpoint
-    const API_URL = 'https://your-replit-url.com/ask';
+   const API_URL = 'https://55a8ae56-4c6d-4997-9503-374a81a986f1-00-8w4ai36gr5qr.janeway.replit.dev/ask';
+
     
     const response = await fetch(API_URL, {
       method: 'POST',
