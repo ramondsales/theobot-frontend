@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+@layer components {
+  .message-bubble {
+    @apply rounded-2xl px-4 py-3 max-w-[85%] md:max-w-[70%] break-words;
+  }
+  
+  .user-message {
+    @apply bg-blue-800/40 ml-auto;
+  }
+  
+  .ai-message {
+    @apply bg-gray-800/80 mr-auto;
+  }
+  
+  .message-container {
+    @apply flex w-full mb-4;
+  }
+  
+  .typing-dot {
+    @apply w-2 h-2 rounded-full bg-gray-300 inline-block mx-0.5;
+  }
+}
